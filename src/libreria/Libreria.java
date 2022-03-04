@@ -2,8 +2,10 @@ package libreria;
 
 import libreria.persistencia.AutorDAO;
 import libreria.persistencia.EditorialDAO;
+import libreria.persistencia.LibroDAO;
 import libreria.servicios.AutorServicio;
 import libreria.servicios.EditorialServicio;
+import libreria.servicios.LibroServicio;
 
 public class Libreria {
 
@@ -13,11 +15,10 @@ public class Libreria {
         AutorServicio AS = new AutorServicio();
         EditorialServicio ES = new EditorialServicio();
         EditorialDAO eDAO = new EditorialDAO();
+        LibroServicio LS = new LibroServicio();
+        LibroDAO lDAO = new LibroDAO();
         
-        System.out.println(aDAO.buscarPorID(1).toString());
-        System.out.println(eDAO.buscarPorID(1).toString());
-        
-        
+        lDAO.guardar(LS.crearLibro());
         
         
     }
