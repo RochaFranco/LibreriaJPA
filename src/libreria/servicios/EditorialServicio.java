@@ -23,4 +23,13 @@ public class EditorialServicio {
         return editorial;
     }
     
+    public Integer buscarID(){
+    
+        Scanner scn = new Scanner(System.in);
+        
+        System.out.println("Ingrese el id de la editorial");
+        Integer id = scn.nextInt();
+        
+        return id;
+    }
 }

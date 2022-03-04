@@ -45,6 +45,13 @@ public class Editorial implements Serializable {
         this.alta = alta;
     }
     
+        @Override
+    public String toString(){
+        
+        String stringARetornar = this.id + ", " + this.nombre + ", " + this.alta;
+        
+        return stringARetornar;
+    }
     
     
 }

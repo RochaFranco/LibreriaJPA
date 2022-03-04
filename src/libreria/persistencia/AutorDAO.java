@@ -24,4 +24,9 @@ public class AutorDAO {
         return autor;
     }
     
+    public Autor buscarPorID(Integer id){
+        return em.find(Autor.class, id);
+    }
+
+    
 }

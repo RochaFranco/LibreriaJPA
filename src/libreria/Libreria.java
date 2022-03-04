@@ -14,9 +14,9 @@ public class Libreria {
         EditorialServicio ES = new EditorialServicio();
         EditorialDAO eDAO = new EditorialDAO();
         
-        //aDAO.guardar(AS.crearAutor());
+        System.out.println(aDAO.buscarPorID(1).toString());
+        System.out.println(eDAO.buscarPorID(1).toString());
         
-        eDAO.guardar(ES.crearEditorial());
         
         
         

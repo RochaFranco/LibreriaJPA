@@ -2,8 +2,11 @@ package libreria.servicios;
 
 import java.util.*;
 import libreria.entidades.Autor;
+import libreria.persistencia.AutorDAO;
 
 public class AutorServicio {
+    
+    AutorDAO aDAO = new AutorDAO();
     
     public Autor crearAutor(){
         
@@ -22,6 +25,17 @@ public class AutorServicio {
         
         return autor;
     }
+    
+    public Integer buscarID(){
+    
+        Scanner scn = new Scanner(System.in);
+        
+        System.out.println("Ingrese el id del Autor");
+        Integer id = scn.nextInt();
+        
+        return id;
+    }
+   
     
     
 }
