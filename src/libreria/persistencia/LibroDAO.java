@@ -23,4 +23,9 @@ public class LibroDAO {
         return libro;
     }
     
+     public Libro buscarPorISBN(Long isbn){
+        
+        return (Libro) em.createQuery("SELECT l FROM Libro l WHERE l.isbn = :isbn").setParameter("isbn", isbn).getSingleResult();
+    }
+    
 }

@@ -36,6 +36,12 @@ public class AutorServicio {
         return id;
     }
    
+    public String buscarNombre(){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del autor:");
+        String nombre =  scn.next();
+        return nombre;
+    }
     
     
 }

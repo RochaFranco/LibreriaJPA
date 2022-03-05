@@ -25,5 +25,7 @@ public class EditorialDAO {
         public Editorial buscarPorID(Integer id){
         return em.find(Editorial.class, id);
     }
+        
+        
     
 }

@@ -18,7 +18,14 @@ public class Libreria {
         LibroServicio LS = new LibroServicio();
         LibroDAO lDAO = new LibroDAO();
         
-        lDAO.guardar(LS.crearLibro());
+        //lDAO.guardar(LS.crearLibro());
+        
+        //eDAO.guardar(ES.crearEditorial());
+        
+        //aDAO.buscarPorNombre(AS.buscarNombre());
+        
+        lDAO.buscarPorISBN(LS.buscarISBN());
+        
         
         
     }

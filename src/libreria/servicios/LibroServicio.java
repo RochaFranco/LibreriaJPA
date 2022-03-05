@@ -50,5 +50,12 @@ public class LibroServicio {
       
       return libro;
   }
+  
+      public Long buscarISBN(){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Ingrese el ISBN del libro:");
+        Long ISBN =  scn.nextLong();
+        return ISBN;
+    }
     
 }

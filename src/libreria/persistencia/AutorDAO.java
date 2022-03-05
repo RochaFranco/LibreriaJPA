@@ -27,6 +27,11 @@ public class AutorDAO {
     public Autor buscarPorID(Integer id){
         return em.find(Autor.class, id);
     }
+    
+    public Autor buscarPorNombre(String nombre){
+        
+        return (Autor) em.createQuery("SELECT a FROM Autor a WHERE a.nombre = :nombre").setParameter("nombre", nombre).getSingleResult();
+    }
 
     
 }
