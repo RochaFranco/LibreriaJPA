@@ -48,7 +48,7 @@ public class Autor implements Serializable {
     @Override
     public String toString(){
         
-        String stringARetornar = this.id + ", " + this.nombre + ", " + this.alta;
+        String stringARetornar = "id: " +this.id + ", nombre: " + this.nombre + ", alta: " + this.alta;
         
         return stringARetornar;
     }

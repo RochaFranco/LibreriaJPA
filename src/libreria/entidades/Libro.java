@@ -107,6 +107,12 @@ public class Libro implements Serializable {
         this.editorial = editorial;
     }
     
-    
+    @Override
+    public String toString(){
+        
+        String stringARetornar = "Isbn:" + this.isbn + ", titulo: " + this.titulo + ", año: " + this.anio + ", ejemplares: " + this.ejemplares + ", ejemplares prestados: " + this.ejemplaresPrestados + ", ejemplares restantes: " + this.ejemplaresRestantes + ", alta: " + this.alta + ", autor: " + this.autor + ", editorial: " + this.editorial;
+        
+        return stringARetornar;
+    }
     
 }

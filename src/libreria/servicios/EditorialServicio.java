@@ -15,8 +15,7 @@ public class EditorialServicio {
         System.out.println("Ingrese el nombre de la editorial:");
         String nombre = scn.next();
         
-        System.out.println("Ingrese el alta de la editorial");
-        boolean alta = scn.nextBoolean();
+        boolean alta = true;
         
               Editorial editorial = new Editorial(id,nombre,alta);
         

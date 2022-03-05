@@ -20,11 +20,11 @@ public class Libreria {
         
         //lDAO.guardar(LS.crearLibro());
         
-        //eDAO.guardar(ES.crearEditorial());
+        eDAO.guardar(ES.crearEditorial());
         
-        //aDAO.buscarPorNombre(AS.buscarNombre());
+        //System.out.println(aDAO.buscarPorNombre(AS.buscarNombre().toString()));
         
-        lDAO.buscarPorISBN(LS.buscarISBN());
+        //System.out.println(lDAO.buscarPorISBN(LS.buscarISBN()).toString());
         
         
         
