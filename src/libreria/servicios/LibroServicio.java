@@ -64,5 +64,12 @@ public class LibroServicio {
         String titulo =  scn.next();
         return titulo;
     }
+      
+      public String buscarAutor(){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Ingrese el autor del libro:");
+        String nombre = scn.next();
+        return nombre;
+    }
     
 }

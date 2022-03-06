@@ -26,7 +26,9 @@ public class Libreria {
         
         //System.out.println(lDAO.buscarPorISBN(LS.buscarISBN()).toString());
         
-        System.out.println(lDAO.buscarPorTitulo(LS.buscarTitulo().toString()));
+        //System.out.println(lDAO.buscarPorTitulo(LS.buscarTitulo().toString()));
+        
+        System.out.println(lDAO.buscarPorAutor(LS.buscarAutor().toString()));
         
     }
     

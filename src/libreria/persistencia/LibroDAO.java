@@ -1,7 +1,9 @@
 package libreria.persistencia;
 
+import java.util.*;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
+import libreria.entidades.Autor;
 import libreria.entidades.Libro;
 
 public class LibroDAO {
@@ -32,5 +34,11 @@ public class LibroDAO {
         
         return (Libro) em.createQuery("SELECT l FROM Libro l WHERE l.titulo = :titulo").setParameter("titulo", titulo).getSingleResult();
     }
+     
+     
+     public List<Libro> buscarPorAutor(String nombre){
+         
+         return em.createQuery("SELECT l FROM Libro l JOIN l.autor a WHERE a.nombre = :nombre").setParameter("nombre", nombre).getResultList();
+     }
     
 }
