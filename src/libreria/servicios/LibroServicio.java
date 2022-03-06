@@ -71,5 +71,12 @@ public class LibroServicio {
         String nombre = scn.next();
         return nombre;
     }
+      
+      public String buscarEditorial(){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Ingrese la editorial del libro:");
+        String nombre = scn.next();
+        return nombre;
+    }
     
 }

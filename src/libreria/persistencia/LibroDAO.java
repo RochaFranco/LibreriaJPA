@@ -40,5 +40,10 @@ public class LibroDAO {
          
          return em.createQuery("SELECT l FROM Libro l JOIN l.autor a WHERE a.nombre = :nombre").setParameter("nombre", nombre).getResultList();
      }
+     
+     public List<Libro> buscarPorEditorial(String nombre)
+     {
+         return em.createQuery("SELECT l FROM Libro l JOIN l.editorial e WHERE e.nombre = :nombre").setParameter("nombre", nombre).getResultList();
+     }
     
 }
