@@ -27,5 +27,10 @@ public class LibroDAO {
         
         return (Libro) em.createQuery("SELECT l FROM Libro l WHERE l.isbn = :isbn").setParameter("isbn", isbn).getSingleResult();
     }
+     
+     public Libro buscarPorTitulo(String titulo){
+        
+        return (Libro) em.createQuery("SELECT l FROM Libro l WHERE l.titulo = :titulo").setParameter("titulo", titulo).getSingleResult();
+    }
     
 }

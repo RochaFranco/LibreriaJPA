@@ -57,5 +57,12 @@ public class LibroServicio {
         Long ISBN =  scn.nextLong();
         return ISBN;
     }
+      
+      public String buscarTitulo(){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Ingrese el titulo del libro:");
+        String titulo =  scn.next();
+        return titulo;
+    }
     
 }
