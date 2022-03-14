@@ -30,7 +30,7 @@ public class Libreria {
         
         //System.out.println(lDAO.buscarPorAutor(LS.buscarAutor().toString()));
         
-        System.out.println(lDAO.buscarPorEditorial(LS.buscarEditorial().toString()));
+        //System.out.println(lDAO.buscarPorEditorial(LS.buscarEditorial().toString()));
         
     }
     
